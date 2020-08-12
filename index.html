@@ -31,7 +31,7 @@
 						<div class="card mb-4">
 							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
 							<div class="card-body text-center">
-								<h4 class="item-title">Филадельфия хит ролл</h5>
+								<h4 class="item-title">Филадельфия хит ролл</h4>
 								<p><small class="text-muted">6 шт.</small></p>
 
 								<div class="details-wrapper">
@@ -47,7 +47,7 @@
 									</div>
 								</div>
 
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
 								
 							</div>
 						</div>
@@ -59,7 +59,7 @@
 						<div class="card mb-4">
 							<img class="product-img" src="img/roll/california-tempura.jpg" alt="">
 							<div class="card-body text-center">
-								<h4 class="item-title">Калифорния темпура</h5>
+								<h4 class="item-title">Калифорния темпура</h4>
 								<p><small class="text-muted">6 шт.</small></p>
 
 								<div class="details-wrapper">
@@ -75,7 +75,7 @@
 									</div>
 								</div>
 
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
 								
 							</div>
 						</div>
@@ -87,7 +87,7 @@
 						<div class="card mb-4">
 							<img class="product-img" src="img/roll/zapech-california.jpg" alt="">
 							<div class="card-body text-center">
-								<h4 class="item-title">Запеченый ролл «Калифорния»</h5>
+								<h4 class="item-title">Запеченый ролл «Калифорния»</h4>
 								<p><small class="text-muted">6 шт.</small></p>
 
 								<div class="details-wrapper">
@@ -104,7 +104,7 @@
 
 								</div>
 
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
 								
 							</div>
 						</div>
@@ -116,7 +116,7 @@
 						<div class="card mb-4">
 							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
 							<div class="card-body text-center">
-								<h4 class="item-title">Филадельфия</h5>
+								<h4 class="item-title">Филадельфия</h4>
 								<p><small class="text-muted">6 шт.</small></p>
 
 								<div class="details-wrapper">
@@ -133,7 +133,7 @@
 
 								</div>
 
-								<button type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
 								
 							</div>
 						</div>
@@ -145,19 +145,28 @@
 			<div class="col-md-4">
 
 				<!-- Корзина Пустая -->
-				<div class="card mb-4 none">
+				<div class="card mb-4">
 					<div class="card-body">
 						<h5 class="card-title">Ваш заказ</h5>
 						<div class="alert alert-secondary" role="alert">
 							Корзина пуста
+						</div>
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+							
+						</div>
+						<!-- cart-wrapper -->
+						<div class="cart-total">
+								<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
+								<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
 						</div>
 					</div>
 				</div>
 				<!-- // Корзина Пустая -->
 
 				<!-- Корзина Полная -->
-				<div class="card none">
-					<div class="card-body">
+				<div class="card">
+					<div class="card-body none">
 						<h5 class="card-title">Ваш заказ</h5>
 						
 						<!-- cart-wrapper -->
@@ -256,9 +265,6 @@
 							</div>
 							<!-- // cart-item  -->
 
-					
-
-						
 
 							<div class="cart-total">
 								<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
